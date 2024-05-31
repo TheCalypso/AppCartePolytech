@@ -1,0 +1,86 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/france_map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/france"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/polytech_orleans"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/polytech"
+        app:layout_constraintBottom_toBottomOf="@id/france_map"
+        app:layout_constraintEnd_toEndOf="@id/france_map"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintStart_toStartOf="@id/france_map"
+        app:layout_constraintTop_toTopOf="@id/france_map"
+ />
+
+    <ImageButton
+        android:id="@+id/polytech_lille"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/polytech"
+        app:layout_constraintBottom_toBottomOf="@id/france_map"
+        app:layout_constraintEnd_toEndOf="@id/france_map"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintVertical_bias="0.24"
+        app:layout_constraintStart_toStartOf="@id/france_map"
+        app:layout_constraintTop_toTopOf="@id/france_map" />
+
+    <ImageButton
+        android:id="@+id/polytech_nancy"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/polytech"
+        app:layout_constraintBottom_toBottomOf="@id/france_map"
+        app:layout_constraintEnd_toEndOf="@id/france_map"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintStart_toStartOf="@id/france_map"
+        app:layout_constraintTop_toTopOf="@id/france_map" />
+
+    <ImageButton
+        android:id="@+id/polytech_nantes"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/polytech"
+        app:layout_constraintBottom_toBottomOf="@id/france_map"
+        app:layout_constraintEnd_toEndOf="@id/france_map"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintStart_toStartOf="@id/france_map"
+        app:layout_constraintTop_toTopOf="@id/france_map" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cliquez sur un logo Polytech"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
